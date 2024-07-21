@@ -500,10 +500,6 @@
 
 ### 8. Design patterns
 
-According to a report by [codespaghetti]("http://www.codespaghetti.com/java-design-pattern-interview-questions/"), The most design patterns that you must to know are **Singleton**, **Factory**, and **Builder**. I didn't bring the typical questions like what is a singleton, factory, and... . I imagine you fluent on these patterns and instead, I will focus on the other side of questions that may asked in the interview meeting.
-
-![Top 5 java design pattern interview questions](/assets/images/design-patterns-report.png)
-
 - **When to use Adapter pattern? (Not for RecyclerView or ListView)**
 
   Use Adapter pattern when you need to make two class work with incompatible interfaces. Adapter pattern can also be used to encapsulate third party code so that your application only depends upon Adapter, which can adapt itself when third party code changes or you moved to a different third party library.
