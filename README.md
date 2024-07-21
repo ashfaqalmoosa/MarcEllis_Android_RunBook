@@ -1,25 +1,6 @@
 ### Android Interview Questions
 
 
-<br>
-
-
----
-#### Table of contents
-
-1. [Object-oriented](https://github.com/javadhme/android-interview-questions#1-object-oriented "Object-oriented")
-2. [Java](https://github.com/javadhme/android-interview-questions#2-java "Java")
-3. [Kotlin](https://github.com/javadhme/android-interview-questions#3-kotlin "Kotlin")
-4. [Android](https://github.com/javadhme/android-interview-questions#4-android "Android")
-5. [Architecture and coding](https://github.com/javadhme/android-interview-questions#5-architecture-and-coding "Architecture and coding")
-6. [Tools and libraries](https://github.com/javadhme/android-interview-questions#6-tools-and-libraries "Tools and libraries")
-7. [Gradle](https://github.com/javadhme/android-interview-questions#7-gradle "Gradle")
-8. [Design patterns](https://github.com/javadhme/android-interview-questions#8-design-patterns "Design patterns")
-9. [Data structure and algoritms](https://github.com/javadhme/android-interview-questions#9-data-structure-and-algoritms "Data structure and algoritms")
-
-
----
-<br>
 
 ### 1. Object-Oriented
 
@@ -173,12 +154,6 @@
 
   because non-static variable are associated with a specific instance of an object while static is not associated with any instance.
 
-- **Java reference types?** [*geeksforgeeks*]("https://www.geeksforgeeks.org/types-references-java/")
-
-- **What is Generic in Java?**
-
-  Generics enable types (classes and interfaces) to be parameters when defining classes, interfaces and methods. Type parameters provide a way for you to re-use the same code with different inputs. The difference is that the inputs to formal parameters are values, while the inputs to type parameters are types. [more details](https://www.geeksforgeeks.org/generics-in-java/)
-
 - **What is the difference between int and Integer?**
 
   `int` is a primitive type, while `Integer` is class with a single field of type `int`. Variables of type `int` store the avtual binary value for the integer. Variables of type `Integer` store references to `Integer` objects, just as with any other reference (object) type. The `Integer` class is used where you need an `int` to be treated like any other object, such as in generic types or situations where you need nullability.
@@ -197,25 +172,16 @@
 
 - **How does a static block work?**
 
-  Run once when class is loaded, used for initializing static members. [read more](https://www.geeksforgeeks.org/g-fact-79/)
+  Run once when class is loaded, used for initializing static members.
 
 - **What does the keyword `synchronized` mean?**
 
   A `synchronized` block in Java is synchronized on some object. All synchronized blocks synchronized on the same object can only have one thread executing inside them at a time. All other threads attempting to enter the synchronized block are blocked until the thread inside the synchronized block exits the block.
 
-- **What is the memory leak? How to handle it?**
-- **What is `transient` modifier? What does it come for?** [complete explanation](https://www.geeksforgeeks.org/transient-keyword-java/)
 
 - **What is the difference between `==` and `.equal`?**
   - The `equals()` method compares two strings, character by character, to determine equality.
   - The `==` operator checks to see whether two object references refer to the same instance of an object
-
-- **What is `reflection`?** [geeksforgeeks](https://www.geeksforgeeks.org/reflection-in-java/)
-- **What is the `volatile` modifier?**
-
-  In multi-threading apps where the threads operate on non-volatile variables, each thread may copy variables from main memory into a CPU cache, for performance reason. If your app run on more than one thread, each thread may copy the variable and cache it. So This keyword is used to mark a variable as "being stored in main memory". Note that reading from and writing to main memory is more expensive than accessing the CPU cache. Thus, you should only use volatile variables when you really need to enforce visibility of variables.
-
-  ![](/assets/images/volatile-preview.png)
 
 - **What is the `hashCode()` used for?**
 
@@ -239,40 +205,6 @@
 - **what is the difference between `throw` and `throws`?**
 
   Keyword `throw` is used to explicitly throw as an exception in the body of function, while `throws` is utilized to handle checked exceptions for re-intimating the compiler that exceptions are being handled. The throws need to be used in the function’s signature and also while invoking the method that raises checked exceptions.
-
-<br>
-
-### 3. Kotlin
-
-- **What are the benefits of Kotlin?**
-
-- **What does "Null safety" meaning?**
-- **Why Kotlin does not support primitive type?**
-- **What is Lazy initialization?**
-- **What is the data class?**
-- **Is it possible to inherit a class/method/property by default?**
-- **Difference between apply, also?**
-- **What `==` exactly do in Kotlin in comparison to Java?**
-- **What is the difference between parameter and argument?**
-- **What is the difference between function and method?**
-- **What is the "receiver" in the extension function?**
-- **What is operator overloading?**
-- **Is it possible to write a static method as java as has?**
-- **What is a sealed class?**
-- **How does an extension function work?**
-- **What is `reified` keyword?**
-- **What is an inline function?**
-- **What are the cons of using an inline function?**
-- **What is the best practice of using an inline function?**
-- **How does the `companion object` block work?**
-- **Is it possible to create an extension function on the `companion object` of a class?**
-- **Extension function as a member, possible? What are the benefits of declaring an extension function as a member?**
-- **What is a spread operator? What is the recommended place to use it?**
-- **What is the producer’s function? how to demonstrate it in Kotlin?**
-- **What is the consumer’s function? how to demonstrate it in Kotlin?**
-- **What is the higher-order function?**
-- **How to compare two Strings in Kotlin?**
-- **What is the difference between `==` and `===` ?**
 
 <br>
 
